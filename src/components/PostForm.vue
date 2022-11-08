@@ -3,7 +3,7 @@
         <form @submit.prevent>
             <h2>Creating post</h2>
             <my-input 
-                v-model="post.title" 
+                v-model="post.title"
                 type="text" 
                 placeholder="Name"
             />

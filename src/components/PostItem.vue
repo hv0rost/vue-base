@@ -2,7 +2,9 @@
     <div class="post">
         <div><strong>Name: </strong> {{ post.title }} </div>
         <div><strong>Description: </strong> {{ post.body }} </div>
-        <my-button> Delete</my-button>
+        <my-button
+            @click="$emit('remove', post)"
+        > Delete</my-button>
     </div>
 </template>
 
