@@ -3,8 +3,15 @@
         <div><strong>Name: </strong> {{ post.title }} </div>
         <div><strong>Description: </strong> {{ post.body }} </div>
         <my-button
+            @click="$router.push(`/posts/${post.id}`)"
+        > 
+            Open
+        </my-button>
+        <my-button
             @click="$emit('remove', post)"
-        > Delete</my-button>
+        > 
+            Delete
+        </my-button>
     </div>
 </template>
 
@@ -15,6 +22,9 @@ export default {
             type: Object,
             required: true
         }
+    },
+    methods : {
+
     }
 }
 </script>
