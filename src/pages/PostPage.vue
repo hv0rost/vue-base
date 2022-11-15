@@ -166,5 +166,4 @@ export default {
 .current-page {
     border: 2px solid purple;
 }
-.observe {}
 </style>

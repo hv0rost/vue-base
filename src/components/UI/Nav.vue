@@ -14,6 +14,18 @@
                 Posts
             </my-button>
             <my-button 
+                style="margin-right: 10px"
+                @click="$router.push('/store')"
+            >
+                Posts in Store
+            </my-button>
+            <my-button 
+                style="margin-right: 10px"
+                @click="$router.push('/composition')"
+            >
+                Composition Post
+            </my-button>
+            <my-button 
                 @click="$router.push('/about')" 
             >
                 About
